@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Responsive Design: Mobile-First-Layout - Batatabit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Batatabit Project</title>
+        <link rel="shortcut icon" href="./assets/icons/batata.ico">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+        
+        <!-- Css link -->
+        <link rel="stylesheet" href="./css/mobile.css" />
+        <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 900px)"/>
+
+        <!-- JavaScript -->
+        <script type="text/JavaScript" src="./js/UpdateDate.js"></script>
+
+    </head>
+    <body>
+        <!-- * Header container: Logo, title and a short paragraph-->
+        <header>
+            <img src="./assets/img/header-logo.svg" alt="Logo_batatabit">
+            <div class="header__title-container">
+                <h1>The next revolution in cryptocurrency exchange</h1>
+                <p>Batatabit helps you to navegate between different prices and trends.</p>
+                <a href="#plans" class="header__button">
+                        Learn about our plans
+                        <span></span>
+                </a>
+            </div>
+        </header>
+
+        <!-- * Main container: exchange, produc, bitcoin img and plans section -->
+        <main>
+            <!-- Section-one: Exchange section -->
+            <section class="main-section-one">
+                <!-- Img -->
+                <div class="main-section-one__BackgroundImg"></div>
+                <!-- Title and paragraph -->
+                <div class="main-section-one__title">
+                    <h2>We make visible all the exchages rates</h2>
+                    <p>We bring real-time information from the most important exchange houses and currencies in the world.</p>
+                </div>
+                <!-- Tables container -->
+                <section class="main-section-one__tablesContainer">
+
+                    <!-- Table: Currency -->
+                    <div class="main-section-one__currency">
+                        <!-- table container -->
+                        <div class="currency-table-container">
+                            <!-- Title -->
+                            <p class="currency-table-title --currency-title-color">Currency</p>
+                            <table>
+                                <!--Row-->
+                                <tr> 
+                                    <!--Columns into row-->
+                                    <td class="table__top-left">Bitcoin</td> 
+                                    <td class="table__top-right table__right">$ 1.96 <span class="trending-down"></span>
+                                    </td>
+                                </tr>
+
+                                <tr> 
+                                    <td>Ethereum</td> 
+                                    <td class="table__right">$ 0.07
+                                        <span class="trending-up"></span>
+                                    </td>
+                                </tr>
+
+                                <tr> 
+                                    <td>Ripple</td> 
+                                    <td class="table__right">$ 2.15
+                                        <span class="trending-down"></span>
+                                    </td>
+                                </tr>
+
+                                <tr> 
+                                    <td class="table__bottom-left">Stellar</td> 
+                                    <td class="table__bottom-right table__right">$ 4.96
+                                        <span class="trending-down"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- Currency table: date updated-->
+                        <div class="showDateUpdated --currency-date-color" >
+                            <p class="update-date">
+                                Updated: 
+                            </p>    
+                            <span id="showDateCurrency">               
+                                 <script type="text/JavaScript">showDate();</script> 
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Table: Commission -->
+                    <div class="main-section-one__commission">
+                        <!-- Table container -->
+                        <div class="commission-table-container">
+                            <!-- Title -->
+                            <p class="commission-table-title --commission-title-color">Commission</p>
+                            <table>
+                                <!--Row-->
+                                <tr> 
+                                    <!--Columns into row-->
+                                    <td class="table__top-left">Bitrade</td> 
+                                    <td class="table__top-right table__right">$ 12.96</td>
+                                </tr>
+
+                                <tr> 
+                                    <td>Bitpreco</td> 
+                                    <td class="table__right">$ 13.07</td>
+                                </tr>
+
+                                <tr> 
+                                    <td>Novadax</td> 
+                                    <td class="table__right">$ 13.15</td>
+                                </tr>
+
+                                <tr> 
+                                    <td class="table__bottom-left">Coinext</td> 
+                                    <td class="table__bottom-right table__right">$ 14.96</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- Currency table: date updated-->
+                        <div class="showDateUpdated --commission-date-color">
+                            <p class="update-date">
+                                Updated: 
+                            </p>    
+                            <span id="showDateCommission">               
+                                <script type="text/JavaScript">showDate();</script>
+                            </span> -->
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Section-two: Product detail -->
+            <section class="main-section-two">
+                <!-- Batata img -->
+                <span class="main-section-two__BatataImg"></span>
+                <!-- Title and paragraph -->
+                <div class="main-section-two__title">
+                    <h2>We create a product without comparison</h2>
+                    <p>Reliable and desingned for daily use.</p>
+                </div>
+                <!-- Card container -->
+                <section class="main-section-two__CardsContainer">
+
+                    <!-- Card  #1-->
+                    <article class="product-card">
+                        <!-- Card-icon -->
+                        <span class="product-card-icon --clock"></span>
+                         <!-- Card-title -->
+                        <h3>Real time</h3>
+                         <!-- Card-paragraph -->
+                        <p>Our API collect information minute by minute about cups that most determine behavior.</p>                        
+                    </article>
+
+                    <!-- Card  #2-->
+                    <article class="product-card">
+                        <!-- Card-icon -->
+                        <span class="product-card-icon --eye"></span>
+                         <!-- Card-title -->
+                        <h3>There isn't hidden cups</h3>
+                         <!-- Card-paragraph -->
+                        <p>Neither in the purchase nor at the moment of exit, Batabit always shows you the real cost of what you are acquiring.</p>                        
+                    </article>
+
+                    <!-- Card  #3-->
+                    <article class="product-card">
+                        <!-- Card-icon -->
+                        <span class="product-card-icon --dollar"></span>
+                         <!-- Card-title -->
+                        <h3>Compare currencies</h3>
+                         <!-- Card-paragraph -->
+                        <p>No more rumors, with Babtabit you will know the real value of each coin in the current market.</p>                        
+                    </article>
+
+                    <!-- Card  #4-->
+                    <article class="product-card">
+                        <!-- Card-icon -->
+                        <span class="product-card-icon --check"></span>
+                         <!-- Card-title -->
+                        <h3>Reliable information</h3>
+                         <!-- Card-paragraph -->
+                        <p>Our sources are 100% verified and we continue to audit their content as they are updated.</p>                        
+                    </article>
+                    
+                </section>
+            </section>
+
+            <!-- Section-three: Meet it today - Bitcoin img -->
+            <section class="main-section-three">
+                <!-- Section three: title -->
+                <h2>Meet it today</h2>
+                <!-- Section three: Img -->
+                <img src="./assets/img/bitcoinbaby2x.png" alt="A-Bitcoin-Img">
+            </section>
+
+            <!-- Section four: Plans section -->
+            <section class="main-section-four" id="plans">
+                <div class="main-section-four__title">
+                    <h2>Choose the plan that best suits you</h2>
+                    <p>Any plan gives you full access to our platform</p>
+                </div>
+                 <!-- Card container -->
+                <section class="main-section-four__CardsContainer-slider">                   
+
+                    <!-- Card  #1-->
+                    <article class="main-section-four__card">
+                        <p class="recommended --recommended-color-monthly">Plus +</p>  
+                        <div class="main-section-four__info-container">
+                           <h3>Monthly Payment</h3>
+                           <p class="main-section-four__cost">55</p>
+                           <p class="main-section-four__info">
+                               *You save $129 compared to the beweekly plan.
+                           </p>
+                        </div>
+                        <button class="main-section-four__button --color-button-monthly">
+                           Choose this <span class="right-arrow-monthly"></span>
+                       </button>
+                   </article>
+
+                    <!-- Card  #2-->
+                    <article class="main-section-four__card">
+                         <p class="recommended --recommended-color-anual">Recommended</p>  
+                         <div class="main-section-four__info-container">
+                            <h3>Anual Payment</h3>
+                            <p class="main-section-four__cost">499</p>
+                            <p class="main-section-four__info">
+                                *You save $161 compared to the monthly plan.
+                            </p>
+                         </div>
+                         <button class="main-section-four__button --color-button-anual">
+                            Choose this <span class="right-arrow-anual"></span>
+                        </button>
+                    </article>
+
+                   <!-- Card  #3-->
+                    <article class="main-section-four__card">
+                        <p class="recommended --recommended-color-biweekly">Basic</p>  
+                        <div class="main-section-four__info-container">
+                            <h3>Biweekly Payment</h3>
+                            <p class="main-section-four__cost">32</p>
+                            <p class="main-section-four__info">
+                                *Offer you the basic tools to start</p>
+                        </div>
+                        <button class="main-section-four__button --color-button-biweekly">
+                            Choose this <span class="right-arrow-biweekly"></span>
+                        </button>
+                    </article>
+                </section>
+            </section>
+        </main>
+
+        <!-- * Footer -->
+        <footer>
+            <div class="footer__container">
+                <section>
+                    <ul>
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Crunchbase</a></li>
+                        <li><a href="#">Hackernews</a> </li>
+                        <li><a href="https://github.com/Ahelu/Project_MobileFirst" target="_blank">Github</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <img src="./assets/img/footer-logo.svg" alt="Logo Batatabit">
+                </section>
+            </div>
+            <div class="footer__contact">
+                <a href="https://github.com/Ahelu" target="_blank">@Ahelu</a>
+            </div>
+        </footer>
+    </body>
+</html>

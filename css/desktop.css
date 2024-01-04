@@ -1,0 +1,50 @@
+/* -- MAIN --*/
+
+/*SECTION ONE:*/
+
+/* Section tables container*/
+.main-section-one__tablesContainer{
+    justify-content: center;
+}
+
+.main-section-one__tablesContainer::-webkit-scrollbar {
+    display: none;
+}
+
+/* SECTION TWO: */
+
+/*Product cards container section*/
+.main-section-two__CardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Product card*/
+.product-card{
+    width: 47%;
+}
+
+
+/*SECTION FOUR: */
+
+/*Plans cards container section*/
+.main-section-four__CardsContainer-slider{
+    justify-content: center;
+}
+
+.main-section-four__CardsContainer-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* -- FOOTER -- */
+
+footer ul{
+    display: flex;
+}
+
+/* Footer links */
+footer ul li{
+ margin-left: 15px;
+}
+

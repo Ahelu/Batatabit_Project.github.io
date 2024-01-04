@@ -1,0 +1,778 @@
+/*
+ 1. Posicionamiento
+ 2. Modelo de caja
+ 3. Tipografia
+ 4. Visuales
+ 5. Otros
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root{
+    /*Color*/
+    --orange-bitcoin: #F7931A;
+    --soft-orange: #FFE9D4;
+
+    --just-white: #FFFFFF;
+    --off-white:#FAF8F7;
+
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+}
+
+
+/*-- HEADER --*/
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 325px;
+    text-align: center;
+
+    background: linear-gradient(228deg, #201E1C 11.19%, #F7931A 100%);
+}
+
+/*Header: img-logo*/
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 50px;
+}
+
+/*Header: title-container*/
+.header__title-container{
+    width:75%;
+    min-width: 220px;
+    max-width: 900px;
+    height: 210px;
+    margin-top: 38px;
+}
+
+/*Header: title-container's title*/
+.header__title-container h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+/*Header: title-container's paragraph*/
+.header__title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+/*Header: title-container's button*/
+.header__title-container .header__button{
+    position: absolute;
+    top: 270px;
+    right: calc(50% - 114.5px);
+    display: block;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    margin-top: 30px;
+    background-color: var(--off-white);
+
+    /*Shadow*/
+    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+/*Header: button's icon*/
+.header__button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 1rem;
+    background-image: url('../assets/icons/black-down-arrow.svg');
+}
+
+
+/*-- MAIN --*/
+
+main{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+
+/* -- SECTION ONE -- */
+
+/* -- Section one container--*/
+.main-section-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+/*Section one Bitcoin-img*/
+.main-section-one__BackgroundImg{
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/img/bitcoin-icon-img.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+/*Section one title and text containe */
+.main-section-one__title{
+    width:75%;
+    min-width: 220px;
+    max-width: 900px;
+    margin-top: 55px;
+    text-align: center;
+}
+
+/*Section one title*/
+.main-section-one__title h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+/*Section one paragraph*/
+.main-section-one__title p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+
+/* -- SECTION ONE: MAIN TABLES --*/
+
+/* Section one: tables */
+.main-section-one__tablesContainer{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+/*Currency and commission table container section*/
+.main-section-one__currency,
+.main-section-one__commission{
+    scroll-snap-align: center;
+    width: 75%;
+    min-width: 250px;
+    max-width: 400px;
+    height: 300px;
+    margin-top: 30px;
+    padding: 0 10px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+/*Margin currency*/
+.main-section-one__currency{
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+/* Margin commission */
+.main-section-one__commission{
+    margin-right: 50px;
+}
+
+/*Currency and commission table title*/
+.currency-table-title,
+.commission-table-title{
+    width: 75%;
+    margin: 0px auto 25px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: left;
+}
+
+/*Currency-table title color*/
+.--currency-title-color{
+    color: var(--orange-bitcoin);
+}
+
+/*Commission-table title color*/
+.--commission-title-color{
+    color: var(--secondary-blue);
+}
+
+/*Currency and commission table-container*/
+.currency-table-container,
+.commission-table-container{
+    position: relative;
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 30px;
+}
+
+/*Currency and commission table*/
+.currency-table-container table,
+.commission-table-container table{
+    width: 100%;
+}
+
+/*Currency and commission td-table*/ 
+.currency-table-container td,
+.commission-table-container td{
+    width: 50%;
+    height: 35px;
+    font-size: 1.2rem;
+    color: #B5B0AC;
+    background-color: var(--just-white);
+}
+
+
+/*-- SECTION ONE: BORDER RADIUS TABLES --*/
+
+/*td top left*/
+.currency-table-container .table__top-left,
+.commission-table-container .table__top-left{
+    /* | top-left | top right | bottom-right | bottom left */
+    border-radius: 15px 0 0 0;
+}
+
+/*td top right*/
+.currency-table-container .table__top-right,
+.commission-table-container .table__top-right{
+    border-radius: 0 15px 0 0;
+}
+
+/*td bottom left*/
+.currency-table-container .table__bottom-left,
+.commission-table-container .table__bottom-left{
+    border-radius: 0 0 0 15px;
+}
+
+/*td bottom right*/
+.currency-table-container .table__bottom-right,
+.commission-table-container .table__bottom-right{
+    border-radius: 0 0 15px 0;
+}
+
+/*down trending arrow*/
+.trending-down{
+    display: inline-block;
+    width: 11px;
+    height: 8px;
+    margin-left: 7px;
+    background-image: url(../assets/icons/trending-down.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*up trending arrow*/
+.trending-up{
+    display: inline-block;
+    width: 11px;
+    height: 8px;
+    margin-left: 7px;
+    background-image: url('../assets/icons/trending-up.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*currency and commission right td table*/
+.currency-table-container .table__right,
+.commission-table-container .table__right{
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+/* -- SECTION ONE: SHOWING THE UPDATE DATED OF THE TABLES */
+
+/*Background: date updated*/
+.showDateUpdated{
+    padding: 8px;
+    width: 200px;
+    height: 31px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 300px;
+    border-radius: 8px;
+}
+
+/*Text: date updated*/
+.update-date{
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/*Currency-Table date color modifier*/
+.--currency-date-color{
+    background-color: var(--soft-orange);
+}
+
+/*Commission-Table date color modifier*/
+.--commission-date-color{
+    background-color: var(--soft-blue);
+}
+
+
+/*-- SECTION TWO --*/
+
+/* -- Section two container--*/
+.main-section-two{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    min-height: auto;
+    padding-bottom: 30px;
+    padding-top: 35px;
+    background-color: var(--warm-black);
+}
+ 
+/*Section two: Batata img*/
+.main-section-two__BatataImg{
+    position: absolute;
+    top: -13px;
+    width: 40px;
+    height: 24px;
+    background-image: url(../assets/icons/batata.svg);
+}
+
+/*Section two: title and paragraph container*/
+.main-section-two__title{
+    width:85%;
+    height: auto;
+    min-width: 220px;
+    max-width: 900px;
+    text-align: center;
+}
+
+/*Section two: title*/
+.main-section-two__title h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+/*Section two: paragraph*/
+.main-section-two__title p{
+    padding-top: 22px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+
+/* -- SECTION TWO: CARDS -- */
+
+/* section two: cards container */
+.main-section-two__CardsContainer{
+    width: 85%;
+    min-width: 220px;
+    max-width: 960px;
+    margin: 18px auto 0;
+}
+
+/* Section two: card */
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 14px auto;
+    padding: 12px;
+    width: 100%;
+    max-width: 850px;
+    min-height: 150px;
+    border-radius: 4px; 
+    background-color: var(--black);
+    /*Shadow*/
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+/*Section two: card icon container*/
+.product-card .product-card-icon{
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*-- SECTION TWO: CARD ICONS, TITLE AND PARAGRAPH --*/
+
+/*Section two: clock icon*/
+.--clock{
+    background-image: url(../assets/icons/clock.svg);
+}
+
+/*Section two: eye icon*/
+.--eye{
+    background-image: url(../assets/icons/eye.svg);
+}
+
+/*Section two: dollar icon*/
+.--dollar{
+    background-image: url(../assets/icons/dollar.svg);
+}
+
+/*Section two: check icon*/
+.--check{
+    background-image: url(../assets/icons/check.svg);
+}
+
+/*Section two: card title*/
+.product-card h3{
+    padding-top: 8px;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+/*Section two: card paragraph*/
+.product-card p{
+    padding-top: 9px;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+
+/* -- SECTION THREE: Bitcoin Img -- */
+
+/* -- Section three container -- */
+.main-section-three{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 70vh;
+    text-align: center;
+}
+
+/* Section three img */
+.main-section-three  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section three title */
+.main-section-three h2{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    font-size: 2.4rem;
+    color: var(--just-white);
+    z-index: 5;
+}
+
+
+/* -- SECTION FOUR: Plans Section -- */
+
+/* -- Section four container -- */
+.main-section-four{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+/*Section four: title and paragraph container*/
+.main-section-four__title{
+    width:85%;
+    height: auto;
+    min-width: 220px;
+    max-width: 900px;
+}
+
+/*Section four: title*/
+.main-section-four__title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+/*Section four: paragraph*/
+.main-section-four__title p{
+    padding-top: 22px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+/*Slider card container*/
+.main-section-four__CardsContainer-slider{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+/*Card-container-body - THE CARD*/
+.main-section-four__card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 220px;
+    max-width: 300px;
+    height: 285px;
+    margin: 65px 10px 0;
+    padding: 0 15px 25px;
+    font-family: "Inter", sans-serif;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(89, 73, 30, 0.16);
+}
+
+/*Recommended suggestion*/
+.recommended{
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 31px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 6.5px;
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
+/*Recommended suggestion - color modifier anual*/
+.--recommended-color-anual{
+    background: linear-gradient(228deg, #F7931A 11.19%, #201E1C 100%);
+}
+
+/*Recommended suggestion - color modifier monthly*/
+.--recommended-color-monthly{
+    background: linear-gradient(228deg, #0fc877 11.19%, #201E1C 100%);
+}
+
+/*Recommended suggestion - color modifier biweekly*/
+.--recommended-color-biweekly{
+    background: linear-gradient(228deg, #1A9AF7 11.19%, #201E1C 100%);
+}
+
+/*card info container*/
+.main-section-four__info-container{
+    padding-top: 38px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+/*info - plan cost*/
+.main-section-four__cost{
+    position: relative;
+    padding: 18px 0;
+    font-size: 5.8rem;
+    line-height: 6rem;
+    letter-spacing: -0.8px;
+    font-weight: 700;
+}
+
+/*info - plan cost - $ */
+.main-section-four__cost::before{
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 60px);
+    content:'$';
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*info - plan cost description*/
+.main-section-four__info{
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: #757575;
+}
+
+/* Card button */
+.main-section-four__button{
+    width: 160px;
+    height: 48px;
+    background-color: #faf8f7;
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+/*Card button - color modifier Anual*/
+.--color-button-anual{
+    border: 2px solid var(--orange-bitcoin);
+}
+
+/*Card button - color modifier Monthly*/
+.--color-button-monthly{
+    border: 2px solid #0fc877;
+}
+
+/*Card button - color modifier biweekly*/
+.--color-button-biweekly{
+    border: 2px solid var(--secondary-blue);
+}
+
+/*Card button - span for icon*/
+.main-section-four__button span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+    vertical-align: text-bottom;
+}
+
+/*Card button - icon color modifier anual*/
+.right-arrow-anual{
+    background-image: url(../assets/icons/orange-right-arrow.svg);
+}
+
+/*Card button - icon color modifier monthly*/
+.right-arrow-monthly{
+    background-image: url(../assets/icons/green-right-arrow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*Card button - icon color modifier biweekly*/
+.right-arrow-biweekly{
+    background-image: url(../assets/icons/blue-right-arrow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* -- FOOTER -- */
+
+/* Section footer */
+footer{
+    background-color: var(--orange-bitcoin);
+    width: 100%;
+    min-width: 320px;
+    height: 160px;
+    padding: 0 40px;
+}
+
+/* footer links and logo container */
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 125px;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+
+/* Footer logo img */
+.footer__container img{
+    width: 68px;
+    height: 52px;
+}
+
+/* Footer links list */
+.footer__container ul{
+    list-style-type: none;
+}
+
+/* Footer links */
+.footer__container ul li a{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+/* Footer links:HOVER */
+.footer__container ul li a:hover{
+    color: var(--black);
+}
+
+/* Footer links:visited*/
+.footer__container ul li a:visited{
+    color: var(--just-white);
+}
+
+/* Footer contact */
+.footer__contact{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    text-align: center;
+    color: var(--just-white);
+}
+
+/* Footer link */
+.footer__contact a{
+    text-decoration: none;
+}
+
+/* Footer contact link:hover */
+.footer__contact a:hover{
+    color: var(--black);
+}
+
+/* Footer contact link:visited*/
+.footer__contact a:visited{
+    color: var(--just-white);
+}
